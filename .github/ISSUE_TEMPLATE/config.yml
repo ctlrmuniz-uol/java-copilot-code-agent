@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 Documentação do Sistema
+    url: https://github.com/ctlrmuniz-uol/java-copilot-code-agent/blob/main/docs/README.md
+    about: Consulte a documentação completa do sistema
+  - name: 💬 Dúvidas Gerais
+    url: https://github.com/ctlrmuniz-uol/java-copilot-code-agent/discussions
+    about: Para perguntas e discussões gerais sobre o sistema

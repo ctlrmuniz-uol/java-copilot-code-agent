@@ -1,0 +1,165 @@
+---
+name: 👥 Gerenciar Inscrições
+about: Inscrever ou remover estudante de uma atividade manualmente
+title: '[INSCRIÇÃO] '
+labels: ['enrollment', 'copilot']
+assignees: []
+
+---
+
+## 👥 Tipo de Operação
+
+### O que deseja fazer?
+- [ ] Inscrever estudante em atividade
+- [ ] Remover estudante de atividade
+- [ ] Transferir estudante entre atividades
+- [ ] Inscrever múltiplos estudantes (em lote)
+
+## 🎯 Detalhes da Atividade
+
+### Nome da Atividade
+<!-- Nome exato da atividade (ex: "Chess Club", "Art Club") -->
+
+
+### Capacidade Atual
+<!-- Vagas disponíveis / Capacidade máxima (ex: 15/20) -->
+Inscritos: 
+Capacidade Total: 
+
+## 👤 Informações do Estudante
+
+### Para Operação Individual
+
+#### E-mail do Estudante
+<!-- E-mail do estudante no formato: nome@mergington.edu -->
+
+
+#### Nome do Estudante (opcional)
+<!-- Para referência -->
+
+
+### Para Operação em Lote
+
+#### Lista de E-mails
+<!-- Cole um e-mail por linha -->
+```
+
+
+```
+
+## 📝 Justificativa
+
+### Motivo da Operação
+<!-- Por que esta inscrição/remoção manual é necessária? -->
+<!-- Ex: "Estudante perdeu prazo", "Transferência de turma", "Erro de inscrição anterior" -->
+
+
+## ⚠️ Validações e Considerações
+
+### Para INSCRIÇÃO:
+
+**A atividade tem vagas disponíveis?**
+- [ ] Sim, há vagas
+- [ ] Não, está cheia (requer override administrativo)
+- [ ] Não sei
+
+**O estudante já está inscrito em outra atividade no mesmo horário?**
+- [ ] Sim (especifique qual): 
+- [ ] Não
+- [ ] Não sei
+
+**Override necessário?**
+- [ ] Sim, inscrever mesmo acima da capacidade
+- [ ] Não, seguir regras normais
+
+### Para REMOÇÃO:
+
+**Motivo da remoção**
+<!-- Marque uma opção -->
+- [ ] Solicitação do estudante
+- [ ] Problemas de comportamento
+- [ ] Transferência para outra atividade
+- [ ] Conflito de horário
+- [ ] Outro: 
+
+**Notificar o estudante?**
+- [ ] Sim, enviar notificação
+- [ ] Não necessário
+
+### Para TRANSFERÊNCIA:
+
+**Atividade de Origem:**
+
+
+**Atividade de Destino:**
+
+
+**A atividade de destino tem vaga?**
+- [ ] Sim
+- [ ] Não (requer override)
+
+## 📧 Notificações
+
+### Enviar confirmação por e-mail?
+- [ ] Sim, notificar o estudante
+- [ ] Sim, notificar o professor responsável
+- [ ] Não enviar notificações
+
+### Template de Notificação (se aplicável)
+```
+Assunto: 
+
+Mensagem:
+
+
+```
+
+## ✅ Critérios de Aceitação
+
+- [ ] A operação deve ser realizada com sucesso
+- [ ] O estudante deve aparecer (ou não aparecer) na lista de participantes
+- [ ] As validações de capacidade devem ser respeitadas (ou override aplicado)
+- [ ] Não deve haver duplicatas na lista de participantes
+- [ ] Se for transferência, remover da origem e adicionar no destino atomicamente
+- [ ] Notificações devem ser enviadas se especificado
+- [ ] A interface deve refletir a mudança imediatamente
+
+## 💡 Contexto Técnico
+
+**Para o Agente Copilot:**
+- Use `StudentRegistrationUseCase` para operações de inscrição/remoção
+- Para inscrição:
+  - Valide email usando `Email` value object
+  - Use `activity.addParticipant(email)` que já valida capacidade e duplicatas
+  - Se override for necessário, considere adicionar flag especial ou aumentar capacidade temporariamente
+- Para remoção:
+  - Use `activity.removeParticipant(email)` que valida se o estudante está inscrito
+- Para transferência:
+  - Faça atomicamente: remova da origem, adicione no destino
+  - Se falhar em uma etapa, reverta a outra
+- Para operação em lote:
+  - Processe cada e-mail individualmente
+  - Registre sucessos e falhas separadamente
+  - Continue processando mesmo se alguns falharem
+- Validações importantes:
+  - Email válido e no domínio correto (@mergington.edu)
+  - Atividade existe
+  - Autenticação do professor
+- Se notificação for necessária, implemente ou registre para implementação futura
+
+## 🎯 Prioridade
+
+### Urgência
+- [ ] 🔴 Urgente - Fazer imediatamente
+- [ ] 🟡 Normal - Dentro de 24h
+- [ ] 🟢 Baixa - Quando possível
+
+## 📝 Informações Adicionais
+
+### Observações
+<!-- Qualquer informação adicional relevante -->
+
+
+### Histórico ou Contexto
+<!-- Informações sobre tentativas anteriores, situação especial, etc. -->
+

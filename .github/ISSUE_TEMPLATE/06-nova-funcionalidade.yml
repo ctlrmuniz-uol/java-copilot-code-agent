@@ -1,0 +1,180 @@
+---
+name: ➕ Nova Funcionalidade
+about: Solicitar uma nova funcionalidade ou recurso no sistema
+title: '[FEATURE] '
+labels: ['enhancement', 'feature', 'copilot']
+assignees: []
+
+---
+
+## 🚀 Descrição da Funcionalidade
+
+### Resumo da Nova Funcionalidade
+<!-- Descreva a funcionalidade de forma clara e concisa -->
+
+
+## 🎯 Objetivo
+
+### Qual problema esta funcionalidade resolve?
+<!-- Descreva o problema ou necessidade que motivou esta solicitação -->
+
+
+### Quem vai usar esta funcionalidade?
+<!-- Marque todas as opções que se aplicam -->
+- [ ] Professores
+- [ ] Estudantes (através de professores)
+- [ ] Administradores
+- [ ] Sistema (automação)
+
+## 💡 Solução Proposta
+
+### Como a funcionalidade deve funcionar?
+<!-- Descreva detalhadamente como a funcionalidade deveria funcionar -->
+
+
+### Fluxo de Uso
+<!-- Descreva passo a passo como um usuário utilizaria esta funcionalidade -->
+1. 
+2. 
+3. 
+
+## 📋 Requisitos Detalhados
+
+### Requisitos Funcionais
+<!-- Liste os requisitos específicos da funcionalidade -->
+- [ ] 
+- [ ] 
+- [ ] 
+
+### Requisitos de Dados
+<!-- Que dados precisam ser armazenados/processados? -->
+
+
+### Integrações Necessárias
+<!-- Esta funcionalidade precisa integrar com outras partes do sistema? -->
+- [ ] Atividades
+- [ ] Inscrições
+- [ ] Autenticação
+- [ ] Banco de dados
+- [ ] Interface web
+- [ ] API externa
+- [ ] Outro: 
+
+## 🎨 Interface do Usuário
+
+### Como deve aparecer na interface?
+<!-- Descreva ou desenhe como a funcionalidade deve aparecer -->
+
+
+### Elementos de UI Necessários
+<!-- Marque os elementos necessários -->
+- [ ] Novo botão
+- [ ] Novo formulário
+- [ ] Nova página
+- [ ] Novo modal
+- [ ] Novo filtro
+- [ ] Nova seção em página existente
+- [ ] Notificação/alerta
+- [ ] Outro: 
+
+## 🔄 Cenários de Uso
+
+### Cenário Principal
+<!-- Descreva o cenário principal de uso -->
+
+
+### Cenários Alternativos
+<!-- Há casos especiais ou alternativos? -->
+
+
+### Casos de Erro
+<!-- O que deve acontecer quando algo der errado? -->
+
+
+## 📊 Dados de Exemplo
+
+### Exemplo de Uso Real
+<!-- Forneça um exemplo concreto de como a funcionalidade seria usada -->
+
+
+### Dados de Entrada
+<!-- Que dados o usuário forneceria? -->
+
+
+### Resultado Esperado
+<!-- O que o usuário veria/receberia como resultado? -->
+
+
+## ⚙️ Considerações Técnicas
+
+### Impacto em Funcionalidades Existentes
+- [ ] Não afeta funcionalidades existentes
+- [ ] Modifica funcionalidades existentes
+- [ ] Se sim, quais? 
+
+### Requisitos de Performance
+<!-- Há algum requisito especial de performance? -->
+
+
+### Segurança e Permissões
+<!-- Precisa de autenticação? Controle de acesso? -->
+- [ ] Requer autenticação de professor
+- [ ] Requer permissões especiais (admin)
+- [ ] Aberto para todos
+- [ ] Outro: 
+
+## ✅ Critérios de Aceitação
+
+- [ ] A funcionalidade deve funcionar conforme descrito
+- [ ] Deve ter validação de dados apropriada
+- [ ] Deve ter tratamento de erros adequado
+- [ ] Deve ser intuitiva e fácil de usar
+- [ ] Deve ser responsiva (mobile, tablet, desktop)
+- [ ] Não deve quebrar funcionalidades existentes
+- [ ] Deve ter testes apropriados
+- [ ] Deve seguir os padrões de arquitetura do sistema (Clean Architecture)
+
+## 💡 Contexto Técnico
+
+**Para o Agente Copilot:**
+- Siga a arquitetura Clean Architecture existente:
+  - **Domain**: Entidades e regras de negócio
+  - **Application**: Casos de uso e DTOs
+  - **Infrastructure**: Implementação de repositórios e configurações
+  - **Presentation**: Controllers e mappers
+- Se criar nova entidade de domínio:
+  - Adicione validações no construtor
+  - Crie interface de repositório em `domain/repositories`
+  - Implemente em `infrastructure/persistence`
+- Se adicionar novo caso de uso:
+  - Crie em `application/usecases`
+  - Use DTOs para comunicação externa
+  - Valide autenticação de professor se necessário
+- Se modificar UI:
+  - Mantenha consistência com design atual
+  - Use estrutura de modais existente
+  - Siga padrões de JavaScript vanilla
+- Adicione testes unitários para lógica de negócio
+- Adicione testes de integração se necessário
+- Documente a nova funcionalidade no README.md se relevante
+
+## 🎯 Prioridade
+
+### Urgência desta funcionalidade
+- [ ] 🔴 Alta - Necessária para operação
+- [ ] 🟡 Média - Importante mas não urgente
+- [ ] 🟢 Baixa - Melhoria desejável
+
+## 📝 Informações Adicionais
+
+### Referências ou Inspiração
+<!-- Outros sistemas que têm funcionalidade similar? -->
+
+
+### Alternativas Consideradas
+<!-- Você considerou outras abordagens? -->
+
+
+### Contexto Adicional
+<!-- Qualquer outra informação relevante -->
+

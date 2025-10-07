@@ -1,0 +1,121 @@
+---
+name: 🗑️ Remover Atividade
+about: Remover uma atividade do sistema
+title: '[REMOVER] '
+labels: ['activity', 'removal', 'copilot']
+assignees: []
+
+---
+
+## 🗑️ Atividade a Remover
+
+### Nome da Atividade
+<!-- Nome exato da atividade que deseja remover (ex: "Chess Club", "Art Club") -->
+
+
+## 📋 Informações Atuais
+
+### Número de Participantes Inscritos
+<!-- Quantos estudantes estão atualmente inscritos? -->
+
+
+### Professor Responsável
+<!-- Quem é o professor responsável? -->
+
+
+## ❓ Motivo da Remoção
+
+### Por que a atividade deve ser removida?
+<!-- Explique o motivo da remoção -->
+<!-- Ex: "Atividade cancelada", "Professor saiu da escola", "Falta de interesse", etc. -->
+
+
+### Tipo de Remoção
+- [ ] Permanente - A atividade não será mais oferecida
+- [ ] Temporária - A atividade pode retornar no futuro
+- [ ] Substituição - Será substituída por outra atividade
+
+## 👥 Impacto nos Participantes
+
+### Há estudantes inscritos?
+- [ ] Sim
+- [ ] Não
+
+### Se sim, como proceder?
+<!-- Marque uma opção -->
+- [ ] Notificar os participantes por e-mail (forneça template abaixo)
+- [ ] Transferir para outra atividade similar (especifique qual)
+- [ ] Apenas remover a atividade
+- [ ] Outro: 
+
+### Template de Notificação (se aplicável)
+<!-- Se escolheu notificar, forneça o texto da notificação -->
+```
+Assunto: 
+
+Mensagem:
+
+
+```
+
+### Atividade Substituta (se aplicável)
+<!-- Se há uma atividade que substitui esta, especifique -->
+
+
+## ⚠️ Confirmação
+
+### Você tem certeza?
+- [ ] ✅ Sim, confirmo que desejo remover esta atividade
+- [ ] ⚠️ Entendo que esta ação afetará X participantes inscritos
+- [ ] 📧 Estou ciente da necessidade de notificar os participantes
+
+## 📝 Ações Adicionais
+
+### Outras ações necessárias?
+<!-- Marque todas que se aplicam -->
+- [ ] Atualizar documentação
+- [ ] Atualizar planilhas externas
+- [ ] Notificar administração
+- [ ] Arquivar dados históricos
+- [ ] Outro: 
+
+## ✅ Critérios de Aceitação
+
+- [ ] A atividade deve ser removida completamente do sistema
+- [ ] A atividade não deve mais aparecer na listagem
+- [ ] O registro pode ser mantido em arquivo/log se necessário
+- [ ] Se houver participantes, tratamento apropriado foi aplicado
+- [ ] Notificações foram enviadas se aplicável
+- [ ] Nenhuma referência quebrada deve permanecer no sistema
+
+## 💡 Contexto Técnico
+
+**Para o Agente Copilot:**
+- Remova o documento da coleção `activities` no MongoDB
+- Use o repositório `ActivityRepository` e método apropriado (delete/remove)
+- Considere criar um backup/log antes de remover definitivamente
+- Se houver participantes (`participants.size() > 0`):
+  - Avalie se deve impedir remoção
+  - Ou permita mas registre em log
+  - Ou implemente notificação se especificado
+- Verifique se há outras partes do sistema que referenciam esta atividade
+- Teste que a remoção não quebra listagens ou filtros
+- Considere soft delete (marcar como inativa) vs hard delete (remover do banco)
+- Se for soft delete, adicione campo `active: false` em vez de remover
+
+## 🎯 Urgência
+
+### Urgência da remoção
+- [ ] 🔴 Urgente - Remover imediatamente
+- [ ] 🟡 Normal - Pode ser feito nos próximos dias
+- [ ] 🟢 Baixa - Não é urgente
+
+## 📝 Informações Adicionais
+
+### Observações
+<!-- Qualquer informação adicional relevante -->
+
+
+### Histórico da Atividade
+<!-- Informações sobre duração, sucesso, problemas, etc. (opcional) -->
+
