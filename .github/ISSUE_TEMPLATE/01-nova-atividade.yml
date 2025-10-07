@@ -1,0 +1,88 @@
+---
+name: 🎯 Nova Atividade
+about: Adicionar uma nova atividade extracurricular ao sistema
+title: '[NOVA ATIVIDADE] '
+labels: ['enhancement', 'activity', 'copilot']
+assignees: []
+
+---
+
+## 📋 Informações da Atividade
+
+### Nome da Atividade
+<!-- Ex: "Clube de Robótica", "Aula de Música" -->
+
+
+### Descrição Detalhada
+<!-- Descreva a atividade, o que os alunos farão, objetivos, etc. -->
+
+
+### Categoria da Atividade
+<!-- Escolha uma opção: SPORTS, ARTS, ACADEMIC, TECHNOLOGY, MUSIC, DRAMA, OTHER -->
+- [ ] SPORTS (Esportes)
+- [ ] ARTS (Artes)
+- [ ] ACADEMIC (Acadêmico)
+- [ ] TECHNOLOGY (Tecnologia)
+- [ ] MUSIC (Música)
+- [ ] DRAMA (Teatro/Drama)
+- [ ] OTHER (Outro)
+
+## 📅 Horários
+
+### Dias da Semana
+<!-- Marque os dias em que a atividade ocorrerá -->
+- [ ] Monday (Segunda-feira)
+- [ ] Tuesday (Terça-feira)
+- [ ] Wednesday (Quarta-feira)
+- [ ] Thursday (Quinta-feira)
+- [ ] Friday (Sexta-feira)
+- [ ] Saturday (Sábado)
+- [ ] Sunday (Domingo)
+
+### Horário de Início
+<!-- Formato: HH:MM (ex: 15:30) -->
+
+
+### Horário de Término
+<!-- Formato: HH:MM (ex: 17:00) -->
+
+
+## 👥 Capacidade
+
+### Número Máximo de Participantes
+<!-- Ex: 20, 30, 15 -->
+
+
+## 📝 Informações Adicionais
+
+### Professor Responsável
+<!-- Seu nome de usuário no sistema -->
+
+
+### Observações
+<!-- Qualquer informação adicional relevante (opcional) -->
+
+
+---
+
+## ✅ Critérios de Aceitação
+
+- [ ] A nova atividade deve aparecer na listagem de atividades
+- [ ] Os horários devem estar corretamente formatados (HH:MM)
+- [ ] A capacidade máxima deve ser um número positivo
+- [ ] A atividade deve ter pelo menos um dia da semana selecionado
+- [ ] A categoria deve ser automaticamente determinada ou definida conforme especificado
+- [ ] A atividade deve permitir inscrições de estudantes
+- [ ] Validações de capacidade devem funcionar corretamente
+
+## 💡 Contexto Técnico
+
+**Para o Agente Copilot:**
+- A atividade deve ser adicionada através da migração de banco de dados ou endpoint apropriado
+- Use a classe `Activity` do domínio com validações apropriadas
+- Use `ScheduleDetails` para armazenar dias e horários
+- Use `ActivityType` para a categoria
+- Garanta que todas as validações de domínio sejam respeitadas
+- A capacidade mínima deve ser > 0
+- Os dias devem usar os nomes em inglês (Monday, Tuesday, etc.)
+- Os horários devem usar `LocalTime` no formato HH:MM

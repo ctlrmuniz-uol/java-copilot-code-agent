@@ -1,0 +1,80 @@
+---
+name: 📊 Alterar Capacidade de Atividade
+about: Aumentar ou diminuir o número máximo de participantes de uma atividade
+title: '[CAPACIDADE] '
+labels: ['enhancement', 'activity', 'copilot']
+assignees: []
+
+---
+
+## 🎯 Atividade
+
+### Nome da Atividade
+<!-- Nome exato da atividade (ex: "Chess Club", "Art Club") -->
+
+
+## 📊 Capacidade Atual
+
+### Número Atual de Participantes Inscritos
+<!-- Quantos estudantes estão atualmente inscritos? -->
+
+
+### Capacidade Máxima Atual
+<!-- Qual é a capacidade máxima atual? -->
+
+
+## 🔄 Nova Capacidade
+
+### Nova Capacidade Máxima Solicitada
+<!-- Qual deve ser a nova capacidade máxima? -->
+
+
+## 📝 Justificativa
+
+### Motivo da Alteração
+<!-- Por que a capacidade precisa ser alterada? -->
+<!-- Ex: "Conseguimos uma sala maior", "Temos mais equipamentos", "Precisa de mais atenção individual" -->
+
+
+### Tipo de Alteração
+- [ ] Aumento de capacidade
+- [ ] Redução de capacidade
+
+## ⚠️ Considerações Importantes
+
+### Se for REDUÇÃO de capacidade:
+
+**A nova capacidade é menor que o número atual de inscritos?**
+- [ ] Sim - Preciso remover alguns participantes
+- [ ] Não - A nova capacidade ainda acomoda todos os inscritos
+
+**Se sim, como proceder?**
+<!-- Explique como deseja lidar com os participantes excedentes -->
+<!-- Ex: "Remover os últimos inscritos", "Manter todos e aceitar a exceção", "Enviar notificação para eu decidir" -->
+
+
+### Se for AUMENTO de capacidade:
+
+**Há lista de espera?**
+<!-- Há estudantes aguardando vaga? -->
+
+
+## ✅ Critérios de Aceitação
+
+- [ ] A nova capacidade máxima deve ser atualizada corretamente
+- [ ] A capacidade deve ser um número positivo maior que 0
+- [ ] Se a nova capacidade for menor que os inscritos atuais, deve haver tratamento apropriado
+- [ ] O sistema deve continuar validando corretamente quando a atividade estiver cheia
+- [ ] A interface deve refletir a nova capacidade e vagas disponíveis
+
+## 💡 Contexto Técnico
+
+**Para o Agente Copilot:**
+- Use o método `setMaxParticipants()` da classe `Activity`
+- Valide que a nova capacidade é > 0 (validação automática do domínio)
+- Se `newCapacity < currentParticipants.size()`, considere:
+  - Lançar exceção e informar o usuário
+  - Ou permitir a alteração mas manter os participantes atuais (ultrapassar temporariamente)
+- Atualize o documento MongoDB correspondente
+- Garanta que `canAddParticipant()` funcione corretamente após a alteração
+- Verifique que a UI mostra corretamente "X/Y vagas" com os novos valores

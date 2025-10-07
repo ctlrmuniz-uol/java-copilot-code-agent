@@ -1,0 +1,116 @@
+---
+name: 🐛 Reportar Bug
+about: Reportar um problema ou comportamento incorreto no sistema
+title: '[BUG] '
+labels: ['bug', 'copilot']
+assignees: []
+
+---
+
+## 🐛 Descrição do Bug
+
+### Resumo do Problema
+<!-- Descreva o bug de forma clara e concisa -->
+
+
+## 📍 Localização
+
+### Onde o bug ocorre?
+<!-- Marque todas as opções que se aplicam -->
+- [ ] Interface Web (frontend)
+- [ ] Listagem de atividades
+- [ ] Inscrição de estudantes
+- [ ] Login de professores
+- [ ] Filtros de busca
+- [ ] API/Backend
+- [ ] Outro: 
+
+## 🔄 Passos para Reproduzir
+
+### Como reproduzir o problema?
+<!-- Liste os passos detalhados para reproduzir o bug -->
+1. 
+2. 
+3. 
+
+## 🎯 Comportamento Esperado
+
+### O que deveria acontecer?
+<!-- Descreva o comportamento correto esperado -->
+
+
+## ❌ Comportamento Atual
+
+### O que está acontecendo?
+<!-- Descreva o comportamento incorreto que você está observando -->
+
+
+## 📸 Evidências
+
+### Mensagens de Erro
+<!-- Cole aqui qualquer mensagem de erro que apareça -->
+```
+<!-- Cole a mensagem aqui -->
+```
+
+### Capturas de Tela
+<!-- Se possível, adicione capturas de tela para ajudar a explicar o problema -->
+<!-- Arraste e solte imagens aqui -->
+
+
+## 🌐 Ambiente
+
+### Informações do Sistema
+<!-- Marque as opções relevantes -->
+- [ ] Navegador: 
+- [ ] Sistema Operacional: 
+- [ ] Versão do Java (se relevante): 
+- [ ] Versão do MongoDB (se relevante): 
+
+### Usuário Afetado
+<!-- Qual professor/usuário está tendo o problema? -->
+
+
+## 📊 Impacto
+
+### Severidade do Bug
+<!-- Marque uma opção -->
+- [ ] 🔴 Crítico - O sistema não funciona
+- [ ] 🟡 Alto - Funcionalidade importante quebrada
+- [ ] 🟢 Médio - Problema que tem workaround
+- [ ] ⚪ Baixo - Problema menor ou cosmético
+
+### Quantas pessoas são afetadas?
+- [ ] Todos os usuários
+- [ ] Alguns professores
+- [ ] Apenas eu
+- [ ] Situação específica
+
+## ✅ Critérios de Aceitação
+
+- [ ] O bug deve ser reproduzível seguindo os passos descritos
+- [ ] A correção deve resolver o problema sem quebrar funcionalidades existentes
+- [ ] Testes devem ser adicionados para prevenir regressão (se aplicável)
+- [ ] A solução deve ser validada no mesmo ambiente onde o bug foi encontrado
+
+## 💡 Contexto Técnico
+
+**Para o Agente Copilot:**
+- Reproduza o bug seguindo os passos fornecidos
+- Identifique a causa raiz no código
+- Corrija o problema com o mínimo de mudanças possível
+- Adicione ou atualize testes unitários/integração para cobrir o cenário
+- Verifique se a correção não introduz novos problemas
+- Valide contra as regras de validação do domínio
+- Se o bug for de frontend, teste em diferentes navegadores se possível
+- Se o bug for de backend, verifique logs e validações de API
+
+## 📝 Informações Adicionais
+
+### Contexto Adicional
+<!-- Qualquer outra informação relevante sobre o problema -->
+
+
+### Possível Causa
+<!-- Se você tem alguma ideia sobre o que pode estar causando o problema (opcional) -->
+

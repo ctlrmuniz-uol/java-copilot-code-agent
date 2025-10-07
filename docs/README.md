@@ -248,6 +248,32 @@ O sistema utiliza **Mongock** para realizar migrações automáticas do banco de
 - **Logs estruturados** - Nível DEBUG para desenvolvimento
 - **Health checks** - Status da aplicação e banco
 
+## 📝 Templates de Issues para Professores
+
+O sistema fornece **templates padronizados de issues** para facilitar solicitações de mudanças pelos professores. Estes templates garantem que todas as informações necessárias sejam fornecidas para que o agente Copilot possa implementar as mudanças automaticamente.
+
+### Templates Disponíveis
+
+1. **🎯 Nova Atividade** - Adicionar nova atividade extracurricular
+2. **✏️ Modificar Atividade** - Alterar atividade existente
+3. **📊 Alterar Capacidade** - Mudar número de vagas
+4. **🐛 Reportar Bug** - Relatar problemas no sistema
+5. **🎨 Melhoria de Interface** - Sugerir melhorias de UI/UX
+6. **➕ Nova Funcionalidade** - Solicitar novos recursos
+7. **🗑️ Remover Atividade** - Excluir atividade do sistema
+8. **👥 Gerenciar Inscrições** - Inscrever/remover estudantes manualmente
+
+### Como Usar
+
+1. Acesse a aba **Issues** do repositório
+2. Clique em **New Issue**
+3. Escolha o template apropriado
+4. Preencha todos os campos obrigatórios
+5. Atribua a issue ao `@copilot`
+6. Aguarde a implementação automática
+
+📚 **Guia Completo:** [Templates de Issues - README](../.github/ISSUE_TEMPLATE/README.md)
+
 ## 🚀 Deploy
 
 ### Perfis de Ambiente

@@ -1,0 +1,132 @@
+---
+name: 🎨 Melhoria de Interface
+about: Sugerir melhorias na interface do usuário ou experiência
+title: '[UI/UX] '
+labels: ['enhancement', 'ui-ux', 'copilot']
+assignees: []
+
+---
+
+## 🎨 Descrição da Melhoria
+
+### Resumo da Sugestão
+<!-- Descreva a melhoria de forma clara e concisa -->
+
+
+## 📍 Localização
+
+### Onde a melhoria deve ser aplicada?
+<!-- Marque todas as áreas que se aplicam -->
+- [ ] Página principal / Listagem de atividades
+- [ ] Formulário de inscrição
+- [ ] Modal de login
+- [ ] Filtros de busca
+- [ ] Cartões de atividades
+- [ ] Barra de navegação
+- [ ] Mensagens de feedback
+- [ ] Toda a interface
+- [ ] Outro: 
+
+## 🎯 Problema ou Oportunidade
+
+### Qual problema isso resolve?
+<!-- Descreva o problema atual ou a oportunidade de melhoria -->
+
+
+### Quem se beneficia?
+<!-- Quem será impactado positivamente por esta melhoria? -->
+- [ ] Professores
+- [ ] Estudantes
+- [ ] Administradores
+- [ ] Todos os usuários
+
+## 💡 Solução Proposta
+
+### Como deveria funcionar/parecer?
+<!-- Descreva detalhadamente como a melhoria deveria ser -->
+
+
+### Exemplos ou Referências
+<!-- Se tiver exemplos visuais, sites de referência ou mockups, adicione aqui -->
+<!-- Arraste e solte imagens aqui ou cole links -->
+
+
+## 🎨 Detalhes Visuais
+
+### Cores
+<!-- Se aplicável, especifique cores -->
+- Cores principais: 
+- Cores de destaque: 
+- Usar cores da escola (branco e verde limão): 
+  - [ ] Sim
+  - [ ] Não
+  - [ ] Parcialmente
+
+### Layout
+<!-- Descreva mudanças de layout se aplicável -->
+
+
+### Elementos Interativos
+<!-- Botões, animações, transições, etc. -->
+
+
+## 📱 Responsividade
+
+### Deve funcionar em:
+<!-- Marque os dispositivos onde a melhoria deve funcionar -->
+- [ ] Desktop
+- [ ] Tablet
+- [ ] Mobile
+- [ ] Todos
+
+## ⚡ Funcionalidade
+
+### A melhoria afeta funcionalidade existente?
+- [ ] Não, é apenas visual
+- [ ] Sim, muda como algo funciona
+- [ ] Adiciona nova funcionalidade
+
+### Se sim, descreva o impacto:
+
+
+## ✅ Critérios de Aceitação
+
+- [ ] A melhoria deve ser visualmente consistente com o resto da interface
+- [ ] Deve funcionar corretamente em todos os tamanhos de tela (se aplicável)
+- [ ] Não deve quebrar funcionalidades existentes
+- [ ] Deve melhorar a experiência do usuário
+- [ ] Deve ser acessível (cores com contraste adequado, textos legíveis, etc.)
+- [ ] Se houver animações, devem ser suaves e não prejudicar a performance
+
+## 💡 Contexto Técnico
+
+**Para o Agente Copilot:**
+- Arquivos principais: `src/main/resources/static/index.html`, `styles.css`, `app.js`
+- Mantenha a estrutura atual de classes CSS
+- Use variáveis CSS existentes quando possível
+- Garanta que mudanças de UI não quebrem JavaScript existente
+- Teste a responsividade em diferentes resoluções
+- Valide acessibilidade básica (contraste, tamanhos de fonte, etc.)
+- Se adicionar novas funcionalidades, siga os padrões existentes:
+  - Fetch API para chamadas HTTP
+  - Event listeners para interatividade
+  - Modais para formulários
+- Mantenha compatibilidade com navegadores modernos
+- Considere performance (evite animações pesadas, otimize imagens, etc.)
+
+## 🎯 Prioridade
+
+### Urgência desta melhoria
+- [ ] 🔴 Alta - Impacta muito a usabilidade
+- [ ] 🟡 Média - Melhoria importante mas não urgente
+- [ ] 🟢 Baixa - Nice to have
+
+## 📝 Informações Adicionais
+
+### Contexto Adicional
+<!-- Qualquer outra informação relevante sobre a melhoria -->
+
+
+### Inspiração ou Motivação
+<!-- O que inspirou esta sugestão? -->
+

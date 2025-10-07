@@ -1,0 +1,97 @@
+---
+name: ✏️ Modificar Atividade Existente
+about: Alterar informações de uma atividade já cadastrada
+title: '[MODIFICAR ATIVIDADE] '
+labels: ['enhancement', 'activity', 'copilot']
+assignees: []
+
+---
+
+## 🎯 Atividade a Modificar
+
+### Nome da Atividade Atual
+<!-- Nome exato da atividade que deseja modificar (ex: "Chess Club", "Art Club") -->
+
+
+## 🔄 Modificações Solicitadas
+
+### O que deseja alterar?
+<!-- Marque todas as opções que se aplicam -->
+- [ ] Nome da atividade
+- [ ] Descrição
+- [ ] Horários (dias ou horas)
+- [ ] Capacidade máxima
+- [ ] Categoria/Tipo
+
+---
+
+### Novo Nome (se aplicável)
+<!-- Deixe em branco se não for alterar -->
+
+
+### Nova Descrição (se aplicável)
+<!-- Deixe em branco se não for alterar -->
+
+
+### Novos Horários (se aplicável)
+
+#### Novos Dias da Semana
+<!-- Marque os dias em que a atividade ocorrerá -->
+- [ ] Monday (Segunda-feira)
+- [ ] Tuesday (Terça-feira)
+- [ ] Wednesday (Quarta-feira)
+- [ ] Thursday (Quinta-feira)
+- [ ] Friday (Sexta-feira)
+- [ ] Saturday (Sábado)
+- [ ] Sunday (Domingo)
+
+#### Novo Horário de Início
+<!-- Formato: HH:MM (ex: 15:30) - Deixe em branco se não for alterar -->
+
+
+#### Novo Horário de Término
+<!-- Formato: HH:MM (ex: 17:00) - Deixe em branco se não for alterar -->
+
+
+### Nova Capacidade Máxima (se aplicável)
+<!-- Ex: 25, 30, 15 - Deixe em branco se não for alterar -->
+
+
+### Nova Categoria (se aplicável)
+<!-- Escolha uma opção se for alterar -->
+- [ ] SPORTS (Esportes)
+- [ ] ARTS (Artes)
+- [ ] ACADEMIC (Acadêmico)
+- [ ] TECHNOLOGY (Tecnologia)
+- [ ] MUSIC (Música)
+- [ ] DRAMA (Teatro/Drama)
+- [ ] OTHER (Outro)
+
+## 📝 Justificativa
+
+### Por que essa mudança é necessária?
+<!-- Explique o motivo da alteração -->
+
+
+### Impacto nos Participantes
+<!-- Há estudantes já inscritos? Como serão afetados? -->
+
+
+## ✅ Critérios de Aceitação
+
+- [ ] As alterações devem ser refletidas corretamente na listagem de atividades
+- [ ] Se houver mudança de horário, os filtros de busca devem funcionar corretamente
+- [ ] Se houver mudança de capacidade, as validações de inscrição devem continuar funcionando
+- [ ] Os participantes já inscritos devem ser mantidos (a menos que a nova capacidade seja menor)
+- [ ] Todas as validações de domínio devem ser respeitadas
+
+## 💡 Contexto Técnico
+
+**Para o Agente Copilot:**
+- Identifique a atividade pelo nome atual na coleção MongoDB
+- Use os métodos setter apropriados da classe `Activity` que incluem validações
+- Se alterar capacidade para valor menor que participantes atuais, considere o comportamento apropriado
+- Mantenha o histórico de participantes a menos que explicitamente solicitado
+- Atualize `ScheduleDetails` se houver mudança de horários
+- Atualize `ActivityType` se houver mudança de categoria
+- Valide que o novo nome não conflita com atividades existentes (se aplicável)
